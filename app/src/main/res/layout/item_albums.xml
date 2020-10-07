@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:textSize="18sp"
+           android:textColor="@color/colorWhite"
+           android:id="@+id/number_albums"
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/number_albums"
+            android:layout_width="wrap_content"
+            android:id="@+id/rl_cover"
+            android:layout_height="wrap_content">
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="8dp"
+                android:id="@+id/cover"
+                app:roundedCorners="all" />
+
+            <ProgressBar
+                android:id="@+id/loading_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTintMode="src_atop"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/rl_cover"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/title_albums"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/playcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

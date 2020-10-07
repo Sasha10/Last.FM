@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppThemeDev" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDev</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDev</item>
+        <item name="colorAccent">@color/colorAccentDev</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeProd" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryProd</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkProd</item>
+        <item name="colorAccent">@color/colorAccentProd</item>
+
+    </style>
+
+</resources>
